@@ -1,6 +1,6 @@
 package com;
 
-import chapter3.MinorGC;
+import chapter3.*;
 
 /**
  * Created by Alasad on 2016/3/11.
@@ -8,6 +8,14 @@ import chapter3.MinorGC;
 public class Main {
 
     public static void main(String[] args) {
-        MinorGC.testAllocation();
+        //MinorGC.testAllocation();
+
+        //PretenureSizeThreshold.testPretenureSizeThreshold();
+
+        //TenuringThreshold.testTenuringThreshold();
+
+        //TenuringThreshold2.testTenuringThreshold();
+
+        HandlePromotion.testHandlePromotion();
     }
 }
