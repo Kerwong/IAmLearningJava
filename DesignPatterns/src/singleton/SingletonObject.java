@@ -6,9 +6,7 @@ public class SingletonObject {
     private static SingletonObject instance = new SingletonObject();
 
     public static SingletonObject getInstance() {
-        if (instance == null) {
-            instance = new SingletonObject();
-        }
+        instance = new SingletonObject();
         return instance;
     }
 
