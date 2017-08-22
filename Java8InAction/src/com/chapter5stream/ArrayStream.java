@@ -1,0 +1,1 @@
+package com.chapter5stream;import java.util.Arrays;/** * Created by wangwenchao02 on 2017/8/21. */public class ArrayStream {    public static void main(String[] args) {        int[] num = new int[] {1,2,3,4,5,6,7,8};        Arrays.stream(num).sum();    }}
