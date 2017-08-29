@@ -2,6 +2,9 @@ package builder;
 
 import java.util.ArrayList;
 
+import TemplateMethod.ConcreteModel1;
+import TemplateMethod.ConcreteModel2;
+
 public class TestBuilder {
     public static void main(String[] args) {
         ArrayList<String> sequence1 = new ArrayList<String>();
