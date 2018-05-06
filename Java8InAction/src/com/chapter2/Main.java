@@ -5,6 +5,7 @@ import com.chapter1.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * Created by wangwc on 2017/6/11.
@@ -21,6 +22,9 @@ public class Main {
         Filter.filter(main.inventory, (Apple a) -> "red".equals(a.getColor()));
         Filter.filter(Arrays.asList(new Integer(11), new Integer(22)), (Integer i) -> i % 2 == 0);
 
-
+        Predicate<Apple> greenApple = (Apple a) -> "green".equals(a.getColor());
+        Predicate<Apple> greenAndHeavyOrRedApple =
+                greenApple.and((a -> a.getWeight() > 150))
+                        .or(a -> "red".equals(a.getColor()));
     }
 }

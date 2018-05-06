@@ -1,0 +1,1 @@
+package tip1;/** * Created by wangwenchao02 on 2017/8/29. */public class StaticFactoryMethod {}
